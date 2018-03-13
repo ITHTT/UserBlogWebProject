@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面详情</title>
+
+    <!--<link rel="stylesheet" media="all" href="../css/nifty.min.css">-->
+    <link rel="stylesheet" media='all' href="../css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="../css/font-awesome.min.css">
+    <link rel='stylesheet' media='all' href='../css/app_style.css'>
+
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/page/emotion.js"></script>
+</head>
+<body>
+    <div class="topbar topbar-fixed-top">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand nav-logo" href="/index">
+                        MyBlog
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/g/blog" nav="文章" target="_self">文章</a>
+                        </li>
+                        <li>
+                            <a href="/g/ask" nav="问答" target="_self">问答</a>
+                        </li>
+                    </ul>
+                    <div id="_search_box" class="search-box navbar-left hidden-xs hidden-sm">
+                        <form class="navbar-form" method="get" action="/browse/search">
+                            <input type="text" class="form-control" name="q" placeholder="搜索她的故事...">
+                            <button class="search-btn" type="submit"><i class="icon-search"></i></button>
+                        </form>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right sign">
+                        <li class="dropdown">
+                            <a href="#" class="user_publish dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-edit"></i> 发布
+                            </a>
+                            <ul class="dropdown-menu publishs" role="menu">
+                                <li>
+                                    <a href="/post/new/blog">
+                                        <i class="icon-pencil"></i>
+                                        <span>写文章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/post/new/ask">
+                                        <i class="icon-question"></i>
+                                        <span>提问题</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="ava dropdown-toggle" data-toggle="dropdown">
+                                <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg">
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="/home" class="ava">
+                                        <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg">
+                                        <span>ITHTT</span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="/account/profile">修改资料</a></li>
+                                <li><a href="/home">个人中心</a></li>
+                                <li><a href="/logout">退出登陆</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-9">
+                    <div class="shadow-box">
+                        <h1 class="article-title">markdown使用教程（markdown快速入门）</h1>
+                        <div class="clearfix article-brief">
+                            <span class="btn-tag">作者</span>
+                            <span class="author">
+                                <a class="author-name" href="/ta/2" target="_blank"> yaokwok</a>
+                            </span>
+                            <time class="time">2017.06.30</time>
+                            <span class="time">浏览: 2296</span>
+                            <span class="time">喜欢: 3</span>
+                            <span class="time">评论: 3</span>
+                            <ul class="tags pull-right">
+                                <li>
+                                    <a class="tag tag-sm" href="/tag/markdown/">markdown</a>
+                                </li>
+                            </ul>
+                            <span class="action-box"></span>
+                        </div>
+
+                        <div>
+                            <div class="thumbs"></div>
+                            <div class="article-content">
+
+                            </div>
+                            <div class="article-upvote">
+                                <a data-id="13394" rel="favor" class="icon-ding dib" href="javascript:void(0);"></a>
+                                <p class="tc">
+                                    <em id="favors">1</em>
+                                    人赞过
+                                </p>
+                            </div>
+                            <div class="article-footer">
+                                <div class="tip">分享到：</div>
+                                <div class="shares">
+                                    <!-- Share Button BEGIN -->
+                                    <div class="bdsharebuttonbox bdshare-button-24 bdshare-button-style1-24" data-bd-bind="1506045934282">
+                                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    </div>
+                                    <script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"3554307689"},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                                    <style>
+                                        .bdshare-button-24 a, .bdshare-button-24 .bds_more {background-image: url("/assets/images/btn/icons_0_24.png"); border-radius: 4px;}
+                                        .bdshare-button-style1-24 a, .bdshare-button-style1-24 .bds_more {padding-left: 24px;}
+                                    </style>                <!-- Share Button END -->
+                                </div>
+                            </div>
+
+                            <ul class="pager">
+                                <li class="previous">
+                                    <a href="/view/13394">← 上一文章</a>
+                                </li>
+                                <li>
+                                    <a href="/view/10598">任意门</a>
+                                </li>
+                                <li class="next">
+                                    <a href="/view/13392">下一文章 →</a>
+                                </li>
+                            </ul>
+
+                            <div id="chat" class="article-comments shadow-box" style="margin-bottom:0px;">
+                                <div class="chat_other">
+                                    <h4>全部评论: <i id="chat_count">0</i> 条</h4>
+                                </div>
+                                <ul id="chat_container" class="its">
+                                    <li>
+                                        <p>还没有评论, 快来占沙发吧!</p>
+                                    </li>
+                                    <li id="chat6">
+                                        <a class="avt fl" target="_blank" href="/ta/13">
+                                            <img class="img-circle" src="../images/default.png">
+                                        </a>
+                                        <div class="chat_body">
+                                            <h5>
+                                                <div class="fl"><a class="chat_name" href="/ta/13">ITHTT</a><span>2017-09-22</span></div>
+                                                <div class="fr reply_this"><a href="javascript:void(0);" onclick="goto('6', 'ITHTT')">[回复]</a></div>
+                                                <div class="clear"></div>
+                                            </h5>
+                                            <div class="chat_p">
+                                                <div class="chat_pct">确实不错</div> <div class="quote"><a href="/ta/13">@ITHTT</a>: 不错。。。</div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="chat_reply"></div>
+                                    </li>
+                                    <li id="chat5">
+                                        <a class="avt fl" target="_blank" href="/ta/13">
+                                            <img class="img-circle" src="../images/default.png">
+                                        </a>
+                                        <div class="chat_body">
+                                            <h5>
+                                                <div class="fl"><a class="chat_name" href="/ta/13">ITHTT</a><span>2017-09-21</span></div>
+                                                <div class="fr reply_this"><a href="javascript:void(0);" onclick="goto('5', 'ITHTT')">[回复]</a></div>
+                                                <div class="clear"></div>
+                                            </h5>
+                                            <div class="chat_p">
+                                                <div class="chat_pct">不错。。。</div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="chat_reply"></div>
+                                    </li>
+                                </ul>
+                                <div id="pager" class="text-center">
+
+                                </div>
+                                <div class="cbox-wrap">
+                                    <div class="cbox-title">我有话说: <span id="chat_reply" style="display:none;">@<i id="chat_to"></i></span>
+                                    </div>
+                                    <div class="cbox-post">
+                                        <div class="cbox-input">
+                                            <textarea id="chat_text" rows="3" placeholder="请输入评论内容"></textarea>
+                                            <input type="hidden" value="0" name="chat_pid" id="chat_pid">
+                                        </div>
+                                        <div class="cbox-ats clearfix">
+                                            <div class="ats-func">
+                                                <ul class="func-list">
+                                                    <li class="list-b">
+                                                        <a href="javascript:void(0);" class="join" id="c-btn">
+                                                            <i class="fa icon-smile fa-2"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ats-issue">
+                                                <button id="btn-chat" class="btn btn-success btn-sm bt">发送</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="emotion-box" id="c-emotion" style="display: none;">
+                                        <div class="emotion-list" view="c-phizs">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3 hidden-xs hidden-sm" style="padding-left: 0px;">
+                    <ul class="list-group about-user">
+                        <li class="list-group-item user-card">
+                            <div class="ava">
+                                <a href="/ta/2">
+                                    <img class="img-circle" src="../images/default.png">
+                                </a>
+                            </div>
+                            <div class="user-info">
+                                <div class="nk" style="margin-bottom: 10px;">	小城故事
+                                </div>
+                                <div style="margin-bottom: 6px;">
+                                    <a class="btn btn-success btn-xs" href="javascript:void(0);" data-id="2" rel="follow">已关注</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="user-datas">
+                                <ul>
+                                    <li><strong>117</strong><span>发布</span></li>
+                                    <li class="noborder"><strong>1</strong><span>评论</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="panel shadow-box">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="icon-group"></i> 热门用户</h3>
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+
+                    <div class="panel shadow-box">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="icon-tags"></i> 热门标签</h3>
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+
+                    <div class="panel shadow-box">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="icon-flag"></i> 热门文章</h3>
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+
+                    <div class="panel shadow-box">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="icon-star"></i> 最新发布</h3>
+                        </div>
+                        <div class="panel-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户主页</title>
+
+    <!--<link rel="stylesheet" media="all" href="../css/nifty.min.css">-->
+    <link rel="stylesheet" media='all' href="../css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" media="all" href="../css/animate.min.css">
+
+    <link rel='stylesheet' media='all' href='../css/app_style.css'>
+
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="topbar topbar-fixed-top">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand nav-logo" href="/index">
+                        MyBlog
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/g/blog" nav="文章" target="_self">文章</a>
+                        </li>
+                        <li>
+                            <a href="/g/ask" nav="问答" target="_self">问答</a>
+                        </li>
+                    </ul>
+                    <div id="_search_box" class="search-box navbar-left hidden-xs hidden-sm">
+                        <form class="navbar-form" method="get" action="/browse/search">
+                            <input type="text" class="form-control" name="q" placeholder="搜索文章及问答...">
+                            <button class="search-btn" type="submit"><i class="icon-search"></i></button>
+                        </form>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right sign">
+                        <li class="dropdown">
+                            <a href="#" class="user_publish dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-edit"></i> 发布
+                            </a>
+                            <ul class="dropdown-menu publishs" role="menu">
+                                <li>
+                                    <a href="/post/new/blog">
+                                        <i class="icon-pencil"></i>
+                                        <span>写文章</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/post/new/ask">
+                                        <i class="icon-question"></i>
+                                        <span>提问题</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="ava dropdown-toggle" data-toggle="dropdown">
+                                <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg">
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="/home" class="ava">
+                                        <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg">
+                                        <span> ITHTT</span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="/account/profile">修改资料</a></li>
+                                <li><a href="/home">个人中心</a></li>
+                                <li><a href="/logout">退出登陆</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--用户中心内容块-->
+    <div class="main_content">
+        <div class="user-profile" style="background-color: #ee1bca7b;">
+            <div class="container">
+                <div class="avatar animated fadeInDown">
+                    <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg">
+                </div>
+                <h1>ITHTT</h1>
+                <h2>一个人的生活</h2>
+                <a class="ft18 col-white">原创
+                    <span class="badge">2</span>
+                </a>
+                &nbsp;&nbsp;
+                <a class="ft18 col-white">粉丝
+                    <span class="badge">2</span>
+                </a>
+                &nbsp;&nbsp;
+                <a class="ft18 col-white">
+                    收藏
+                    <span class="badge">0</span>
+                </a>
+                <br>
+                <a class="btn btn-white" href="javascript:void(0);" data-id="35" rel="follow">+ 关注</a>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <!-- tab -->
+                    <div class="menu-tab">
+                        <ul class="nav nav-tabs nav-tabs-bottom">
+                            <li class="active">
+                                <a href="#basic-tab1" data-toggle="tab">
+                                    <i class="icon-list" style="margin-right: 5px;"></i>最新的
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#basic-tab2" data-toggle="tab">
+                                    <i class="icon-leaf" style="margin-right: 5px;"></i>热门的
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="basic-tab1">
+                                <div class="article-list">
+                                    <div class="article-list-item" id="loop-15766">
+                                        <div class="article-item-head clearfix hidden-xs">
+                                            <div class="users">
+                                                <a href="/ta/2">
+                                                    <div class="ava">
+                                                        <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg"/>
+                                                    </div>
+                                                    <div class="info">
+                                                        <strong>小城故事</strong>
+                                                        <time>2017-09-09</time>
+                                                        <time>15小时前</time>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="counts">
+                                                <span class="act"><i class="icon icon-eye-open"></i>0</span>
+                                                <span class="act"><i class="icon icon-heart-empty"></i>0</span>
+                                                <span class="act"><i class="icon icon-comment-alt"></i>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="article-item-summary">
+                                            <a href="/view/15766">
+                                                <div class="title">
+                                                    <span class="label label-success">文</span>
+                                                    <h2>一眼识破</h2></div>
+                                                <div class="excerpt wordbreak">　　江峰正在公路上设卡，他和同事们全副武装，要抓捕刚刚抢劫了珠宝店的大盗。　　远处缓缓地开过来一辆轿车，停在了路障前。车内坐着一男一女，两人很亲密，看上去是一对情侣。江峰愣了一下，他让二人出示了相关证件，这时候车里的男人说：“我和女朋... </div>
+                                            </a>
+                                            <!--前端图片显示样式-->
+                                            <div class="article-item-foot clearfix">
+                                                <ul class="tags">
+                                                    <li>
+                                                        <a class="tag tag-sm" href="/tag/民间故事/">民间故事</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="tag tag-sm" href="/tag/精彩首页/">精彩首页</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="article-list-item" id="loop-15767">
+                                        <div class="article-item-head clearfix hidden-xs">
+                                            <div class="users">
+                                                <a href="/ta/2">
+                                                    <div class="ava">
+                                                        <img class="img-circle" src="http://source.gicyu.com/data/mblog/store/ava/000/00/00/02_100.jpg"/>
+                                                    </div>
+                                                    <div class="info">
+                                                        <strong>小城故事</strong>
+                                                        <time>2017-09-09</time>
+                                                        <time>15小时前</time>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="counts">
+                                                <span class="act"><i class="icon icon-eye-open"></i>0</span>
+                                                <span class="act"><i class="icon icon-heart-empty"></i>0</span>
+                                                <span class="act"><i class="icon icon-comment-alt"></i>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="article-item-summary">
+                                            <a href="/view/15766">
+                                                <div class="title">
+                                                    <span class="label label-success">文</span>
+                                                    <h2>一眼识破</h2></div>
+                                                <div class="excerpt wordbreak">　　江峰正在公路上设卡，他和同事们全副武装，要抓捕刚刚抢劫了珠宝店的大盗。　　远处缓缓地开过来一辆轿车，停在了路障前。车内坐着一男一女，两人很亲密，看上去是一对情侣。江峰愣了一下，他让二人出示了相关证件，这时候车里的男人说：“我和女朋... </div>
+                                            </a>
+                                            <!--前端图片显示样式-->
+                                            <div class="article-item-foot clearfix">
+                                                <ul class="tags">
+                                                    <li>
+                                                        <a class="tag tag-sm" href="/tag/民间故事/">民间故事</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="tag tag-sm" href="/tag/精彩首页/">精彩首页</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="basic-tab2">
+                                <div class="qa-list">
+                                    <div class="qa-list-item" id="loop-78">
+                                        <div class="qa-rank">
+                                            <div class="answers">
+                                                <span style="display: block;">3</span>
+                                                <small>回答</small>
+                                            </div>
+                                            <div class="views hidden-xs">
+                                                <span style="display: block;">26</span>
+                                                <small>浏览</small>
+                                            </div>
+                                        </div>
+                                        <div class="qa-summary">
+                                            <h2 class="title"> <a href="/view/78">哪位老哥可以帮忙一下，项目无法运行，一些maven依赖包没有啊</a>
+                                            </h2>
+                                            <div class="qa-foot-block clearfix">
+                                                <div class="author">
+                                                        <span>
+                                                            <a href="/ta/95"> 小海</a>
+                                                        </span>
+                                                    <time style="margin-left: 10px;">2017-09-13</time>
+                                                </div>
+                                                <ul class="tags">
+                                                    <li>
+                                                        <a class="tag tag-sm" href="/tag/jenkins/">jenkins</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="pull-right hidden-xs">
+                                                    <a href="/view/78" class="act">查看更多</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <div class="container">
+                <ul class="about-ul list-inline clearfix">
+                    <li><a href="/about">关于我们</a></li>
+                    <li><a href="/joinus">联系我们</a></li>
+                    <li><a href="/faqs">常见问题</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copy-right">
+            <span>Copyright © <a
+                    href="http://www.miitbeian.gov.cn/" target="_blank">  京ICP备16064526号-1</a>
+            </span>
+            <span class="pull-right">个人博客</span>
+        </div>
+
+    </footer>
+</body>
+</html>

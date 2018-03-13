@@ -1,0 +1,131 @@
+.tokenfield{
+    height:auto;
+    padding:0 0 3px 0
+}
+.tokenfield:after{
+    content:'';display:table;clear:both
+}
+.tokenfield .token{
+    margin:3px 0 0 3px;
+    cursor:default;
+    float:left;
+    position:relative;border-radius:2px
+}
+.tokenfield .token.invalid{
+    background-color:transparent;
+    border:1px solid transparent;
+    border-radius:0;
+    border-bottom:1px dotted #f44336
+}
+.tokenfield .token.invalid.active{
+    background-color:#eee;
+    border:1px solid #eee
+}
+.tokenfield .token .token-label{
+    display:block;
+    overflow:hidden;
+    text-overflow: ellipsis;padding:4px 10px;
+    padding-right:28px;
+    background-color: #0fad59;
+    color:#fff;
+    font-size:12px;
+    line-height:1.6666667;
+    border-radius:2px
+}
+.tokenfield .token .close{
+    font-size:small;
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    right:8px;
+    color: white;
+    line-height:1;
+    margin-top:-8px;
+    opacity:.7;
+    filter:alpha(opacity=70)
+}
+.tokenfield .token .close:after{
+    /*content:'\ed6b';*/
+    font-family:'icomoon';
+    display:block;
+    font-size:16px;
+    color:#fff;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.tokenfield .token .close:hover{
+    opacity:1;
+    filter:alpha(opacity=100)
+}
+.tokenfield .token[class*=bg-] .token-label{
+    background-color:inherit
+}
+.tokenfield .token[class*=bg-] .close{
+    color:inherit
+}
+.tokenfield .twitter-typeahead{
+    width:auto
+}
+.tokenfield .token-input{
+    background:none;
+    width:60px !important;
+    min-width:60px;
+    height:28px;
+    padding-left:7px;
+    margin-top:3px;
+    font-size:12px;
+    line-height:1.6666667;
+    border:0;
+    outline:0
+}
+.tokenfield.readonly .token .token-label{
+    padding-right:10px
+}
+.tokenfield.readonly .token .close{
+    display:none
+}
+.tokenfield.disabled{
+    background-color:#fafafa;
+    color:#999
+}
+.tokenfield.disabled .token,.tokenfield.disabled .token .close{
+    opacity:.5;
+    filter:alpha(opacity=50)
+}
+.tokenfield.disabled,
+.tokenfield.disabled .token-input,
+.tokenfield.disabled .token,
+.tokenfield.disabled .token .close{
+    cursor:not-allowed
+}
+.tokenfield.rtl{
+    direction:rtl;
+    text-align:right
+}
+.tokenfield.rtl .token{
+    margin-left:0;
+    margin-right:3px
+}
+.tokenfield.rtl .token .token-label{
+    padding-left:28px;
+    padding-right:10px
+}
+.tokenfield.input-lg,
+.input-group-lg .tokenfield{
+    padding:0 0 3px 0
+}
+.input-group-lg .token>.token-label,.tokenfield.input-lg .token>span{
+    padding-top:6px;
+    padding-bottom:6px
+}
+.input-group-lg .token-input,.tokenfield.input-lg .token-input{
+    height:32px
+}
+.tokenfield.input-sm,.input-group-sm .tokenfield{
+    padding:0 0 3px 0
+}
+.input-group-sm .token>.token-label,.tokenfield.input-sm .token>span{
+    padding-top:3px;padding-bottom:3px
+}
+.input-group-sm .token-input,.tokenfield.input-sm .token-input{height:26px
+}
